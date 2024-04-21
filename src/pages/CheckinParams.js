@@ -24,7 +24,7 @@ export const CheckinParams = () => {
 
   useEffect(() => {
     fetch(
-      `http://localhost:5000/odprawa/${username}/${email}/${flightId}/${seats}`
+      `https://wolfie-airlines-server.vercel.app/odprawa/${username}/${email}/${flightId}/${seats}`
     )
       .then((response) => response.json())
       .then((data) => {
@@ -43,7 +43,7 @@ export const CheckinParams = () => {
           setDestinationTime(data.destinationTime);
           setGateNumber(generateGateNumber());
           fetch(
-            `http://localhost:5000/odprawa/accept/${username}/${email}/${flightId}/${seats}`
+            `https://wolfie-airlines-server.vercel.app/odprawa/accept/${username}/${email}/${flightId}/${seats}`
           ).then((response) => response.json());
           setTimeout(() => {
             setLoading(false);

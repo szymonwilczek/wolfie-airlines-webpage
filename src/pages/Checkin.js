@@ -1,9 +1,10 @@
 import React from "react";
 import Navbar from "../components/navigation/Navbar";
 import { Footer } from "../components/sections/Footer";
+import { useNavigate } from "react-router-dom";
 
 export const Checkin = () => {
-  //   const navigate = useNavigate();
+  const navigate = useNavigate();
 
   return (
     <div className="dark:bg-dot-white/[0.2] bg-dot-black/[0.2]">

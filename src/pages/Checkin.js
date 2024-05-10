@@ -125,9 +125,11 @@ export const Checkin = () => {
                   <div className="flex items-end max-lg:items-center justify-end max-lg:justify-center">
                     <button
                       type="button"
-                      // onClick={() =>
-                      //   navigate("app-release-link")
-                      // }
+                      onClick={() =>
+                        navigate(
+                          "https://github.com/wolfie-airlines/wolfie-airlines"
+                        )
+                      }
                       className="max-xl:text-sm font-inter py-2 px-6 mt-5 text-white font-semibold bg-blue-600 rounded-lg hover:bg-blue-700"
                     >
                       Pobierz naszą aplikację
